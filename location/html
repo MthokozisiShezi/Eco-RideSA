@@ -1,0 +1,100 @@
+<head>
+
+    <title>Locations & Contact | EcoRide SA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== header and navigation ===== -->
+    <header>
+        <div class="logo">
+            <a href="index.html">EcoRide <span>SA</span></a>
+        </div>
+
+        <button id="menu-button" aria-label="Open the menu">Menu</button>
+
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="scooter_page.html">Scooters</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="safety_information.html">Safety</a>
+            <a href="location.html" class="active">Locations & Contact</a>
+            <a href="enquiry.html">Enquiry</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-title">
+            <h1>Locations &amp; Contact</h1>
+            <p>Find a station near you or get in touch.</p>
+        </section>
+
+        <!-- the three stations -->
+        <section>
+            <h2>Our Stations</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Randburg CBD</h3>
+                    <p>Pickup and drop-off point in the middle of Randburg.</p>
+                </div>
+                <div class="card">
+                    <h3>Cresta</h3>
+                    <p>Pickup and drop-off point near the Cresta area.</p>
+                </div>
+                <div class="card">
+                    <h3>UJ Kingsway Campus</h3>
+                    <p>Pickup and drop-off point for UJ students.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- map -->
+        <section class="map-box">
+            <h2>Find Us on the Map</h2>
+            <iframe title="Map of Randburg, Gauteng" loading="lazy"
+                src="https://www.google.com/maps?q=Randburg+CBD,+Gauteng&amp;output=embed"></iframe>
+        </section>
+
+        <!-- contact details and a short form -->
+        <section class="two-columns">
+            <div>
+                <h2>Contact Details</h2>
+                <p><strong>Email:</strong> info@ecoridesa.co.za</p>
+                <p><strong>Phone:</strong> 010 123 4567</p>
+                <p><strong>Address:</strong> Randburg, Gauteng</p>
+                <p><strong>Hours:</strong> Monday to Sunday, 07:00 - 19:00</p>
+            </div>
+
+            <form action="#" method="post">
+                <h2>Send Us a Message</h2>
+
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" required>
+
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" required>
+
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" required></textarea>
+
+                <button type="submit" class="button">Send</button>
+                <p id="form-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- ===== footer ===== -->
+    <footer>
+        <h3>EcoRide SA</h3>
+        <p>Affordable. Convenient. Eco-Friendly.</p>
+        <p>Randburg, Gauteng</p>
+        <p>&copy; 2026 EcoRide SA</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
