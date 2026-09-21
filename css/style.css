@@ -1,0 +1,378 @@
+/* ==========================================
+   EcoRide SA - main stylesheet
+   used on every page
+   ========================================== */
+
+/* ---------- reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul, ol {
+    padding-left: 1.5em;
+}
+
+/* ---------- base styles ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #f5f9f5;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #14503a;
+}
+
+h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #1b7f4b;
+}
+
+a:hover {
+    color: #0f5a34;
+}
+
+/* keyboard users need to see where they are */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid #f5b800;
+    outline-offset: 2px;
+}
+
+/* ---------- header and navigation ---------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: #1b7f4b;
+    position: relative;
+}
+
+.logo a {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #f5b800;
+}
+
+nav {
+    display: flex;
+    gap: 1.2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem 0.2rem;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    border-bottom: 3px solid #f5b800;
+    color: white;
+}
+
+/* the menu button only shows on small screens */
+#menu-button {
+    display: none;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+}
+
+/* ---------- general layout ---------- */
+main section {
+    padding: 3rem 5%;
+}
+
+.page-title {
+    background-color: #dff0e6;
+    text-align: center;
+    padding: 2.5rem 5%;
+}
+
+.page-title p {
+    margin-bottom: 0;
+}
+
+/* keeps long text from stretching across the whole screen */
+.narrow {
+    max-width: 55rem;
+}
+
+/* a bit of space when a paragraph comes right after the cards */
+.card-container + p {
+    margin-top: 1.5rem;
+}
+
+/* ---------- buttons ---------- */
+.button {
+    display: inline-block;
+    background-color: #f5b800;
+    color: #222222;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #d99f00;
+    color: #222222;
+}
+
+.button:active {
+    background-color: #b98700;
+}
+
+/* ---------- home page hero ---------- */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background-color: #dff0e6;
+}
+
+.hero p {
+    font-size: 1.15rem;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- cards (used on lots of pages) ---------- */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d4e5d9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.card ul {
+    margin-bottom: 1rem;
+}
+
+.green-section {
+    background-color: #1b7f4b;
+    color: white;
+    text-align: center;
+}
+
+.green-section h2 {
+    color: white;
+}
+
+/* ---------- pricing table ---------- */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 0.9rem;
+    text-align: left;
+    border: 1px solid #d4e5d9;
+}
+
+th {
+    background-color: #1b7f4b;
+    color: white;
+}
+
+tr:hover td {
+    background-color: #f0f7f2;
+}
+
+/* ---------- forms ---------- */
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d4e5d9;
+    max-width: 40rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #999999;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input:hover, select:hover, textarea:hover {
+    border-color: #1b7f4b;
+}
+
+textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+#form-message {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #14503a;
+}
+
+/* ---------- map ---------- */
+.map-box iframe {
+    width: 100%;
+    height: 22rem;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+/* two columns for the location / contact page */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* ---------- footer ---------- */
+footer {
+    background-color: #14503a;
+    color: white;
+    text-align: center;
+    padding: 2rem 5%;
+}
+
+footer h3 {
+    color: #f5b800;
+}
+
+footer p {
+    margin-bottom: 0.4rem;
+}
+
+/* ==========================================
+   TABLET  (up to 900px wide)
+   ========================================== */
+@media (max-width: 900px) {
+
+    h1 { font-size: 2.1rem; }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================
+   MOBILE  (up to 700px wide)
+   ========================================== */
+@media (max-width: 700px) {
+
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+
+    main section {
+        padding: 2rem 5%;
+    }
+
+    /* menu turns into a hamburger style button */
+    #menu-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #14503a;
+        z-index: 10;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        padding: 1rem 5%;
+        border-bottom: 1px solid #1b7f4b;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        padding: 1.2rem;
+    }
+}
