@@ -1,0 +1,119 @@
+<head>
+    <title>Home | EcoRide SA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== header and navigation ===== -->
+    <header>
+        <div class="logo">
+            <a href="index.html">EcoRide <span>SA</span></a>
+        </div>
+
+        <button id="menu-button" aria-label="Open the menu">Menu</button>
+
+        <nav id="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="scooter_page.html">Scooters</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="safety_information.html">Safety</a>
+            <a href="location.html">Locations & Contact</a>
+            <a href="enquiry.html">Enquiry</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- hero: heading, short text, button and a picture -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Ride Smart.<br>Ride Green.</h1>
+                <p>Affordable and convenient electric scooter rentals around Randburg, Cresta and UJ.</p>
+                <a href="enquiry.html" class="button">Hire a Scooter</a>
+            </div>
+
+            <picture>
+                <source media="(max-width: 700px)" srcset="images/hero-small.jpg">
+                <img src="images/hero-large.jpg" alt="An EcoRide SA electric scooter ready to hire">
+            </picture>
+        </section>
+
+        <!-- short intro about the company -->
+        <section class="narrow">
+            <h2>Welcome to EcoRide SA</h2>
+            <p>EcoRide SA is an electric scooter rental company based in Randburg, Gauteng.</p>
+            <p>The company was started in January 2025 by two engineering students from the University of Johannesburg
+                who wanted an affordable way to get around for short trips.</p>
+            <p>We started with 20 electric scooters in Randburg CBD, Cresta and UJ Kingsway Campus. Today we have 80
+                scooters.</p>
+            <a href="about_us.html">Read more about us</a>
+        </section>
+
+        <!-- three reasons to choose us -->
+        <section>
+            <h2>Why Choose EcoRide SA?</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Affordable</h3>
+                    <p>A cheap alternative for short trips, with clear prices and no hidden costs.</p>
+                </div>
+                <div class="card">
+                    <h3>Easy Booking</h3>
+                    <p>Send an enquiry or book a scooter online without having to speak to anyone.</p>
+                </div>
+                <div class="card">
+                    <h3>Eco-Friendly</h3>
+                    <p>Electric scooters are a greener way to travel short distances.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- who we are for -->
+        <section class="narrow">
+            <h2>Who Is EcoRide SA For?</h2>
+            <p>Our main customers are students and young professionals between 18 and 35 years old.</p>
+            <p>We focus on the Gauteng region, including UJ, Wits, Randburg, Sandton and Fourways.</p>
+        </section>
+
+        <!-- pickup points -->
+        <section>
+            <h2>Our Locations</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Randburg CBD</h3>
+                    <p>Pickup and drop-off point.</p>
+                </div>
+                <div class="card">
+                    <h3>Cresta</h3>
+                    <p>Pickup and drop-off point.</p>
+                </div>
+                <div class="card">
+                    <h3>UJ Kingsway Campus</h3>
+                    <p>Pickup and drop-off point.</p>
+                </div>
+            </div>
+            <p><a href="location.html">See the map and contact details</a></p>
+        </section>
+
+        <!-- call to action at the bottom -->
+        <section class="green-section">
+            <h2>Ready to Ride?</h2>
+            <p>Find a scooter near you and enjoy a simple way to get around.</p>
+            <a href="enquiry.html" class="button">Book Your Scooter</a>
+        </section>
+    </main>
+
+    <!-- ===== footer ===== -->
+    <footer>
+        <h3>EcoRide SA</h3>
+        <p>Affordable. Convenient. Eco-Friendly.</p>
+        <p>Randburg, Gauteng</p>
+        <p>&copy; 2026 EcoRide SA</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
