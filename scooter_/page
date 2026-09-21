@@ -1,0 +1,97 @@
+<head>
+
+    <title>Scooters | EcoRide SA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== header and navigation ===== -->
+    <header>
+        <div class="logo">
+            <a href="index.html">EcoRide <span>SA</span></a>
+        </div>
+
+        <button id="menu-button" aria-label="Open the menu">Menu</button>
+
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="scooter_page.html" class="active">Scooters</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="safety_information.html">Safety</a>
+            <a href="location.html">Locations & Contact</a>
+            <a href="enquiry.html">Enquiry</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-title">
+            <h1>Our Scooters</h1>
+            <p>Pick the scooter that suits your trip.</p>
+        </section>
+
+        <!-- the scooter models -->
+        <section>
+            <div class="card-container">
+                <div class="card">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="images/city-cruiser-small.jpg">
+                        <img src="images/city-cruiser-large.jpg" alt="The City Cruiser electric scooter">
+                    </picture>
+                    <h3>City Cruiser</h3>
+                    <p>A comfortable all-round scooter for getting around town.</p>
+                    <ul>
+                        <li>Best for: trips around Randburg and Cresta</li>
+                        <li>Range: about 25 km</li>
+                        <li>Top speed: 25 km/h</li>
+                    </ul>
+                    <a href="enquiry.html" class="button">Enquire</a>
+                </div>
+                <div class="card">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="images/campus-lite-small.jpg">
+                        <img src="images/campus-lite-large.jpg" alt="The Campus Lite electric scooter">
+                    </picture>
+                    <h3>Campus Lite</h3>
+                    <p>Light and easy to ride, made for short trips between lectures.</p>
+                    <ul>
+                        <li>Best for: students at UJ Kingsway</li>
+                        <li>Range: about 15 km</li>
+                        <li>Top speed: 20 km/h</li>
+                    </ul>
+                    <a href="enquiry.html" class="button">Enquire</a>
+                </div>
+                <div class="card">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="images/power-rider-small.jpg">
+                        <img src="images/power-rider-large.jpg" alt="The Power Rider electric scooter">
+                    </picture>
+                    <h3>Power Rider</h3>
+                    <p>A stronger scooter for longer trips and bigger hills.</p>
+                    <ul>
+                        <li>Best for: young professionals and longer trips</li>
+                        <li>Range: about 35 km</li>
+                        <li>Top speed: 25 km/h</li>
+                    </ul>
+                    <a href="enquiry.html" class="button">Enquire</a>
+                </div>
+            </div>
+            <p>Not sure which one to pick? Check the <a href="pricing.html">prices</a> or read our <a
+                    href="safety_information.html">safety tips</a> first.</p>
+        </section>
+    </main>
+
+    <!-- ===== footer ===== -->
+    <footer>
+        <h3>EcoRide SA</h3>
+        <p>Affordable. Convenient. Eco-Friendly.</p>
+        <p>Randburg, Gauteng</p>
+        <p>&copy; 2026 EcoRide SA</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
