@@ -1,0 +1,94 @@
+<head>
+
+    <title>Pricing | EcoRide SA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== header and navigation ===== -->
+    <header>
+        <div class="logo">
+            <a href="index.html">EcoRide <span>SA</span></a>
+        </div>
+
+        <button id="menu-button" aria-label="Open the menu">Menu</button>
+
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="scooter_page.html">Scooters</a>
+            <a href="pricing.html" class="active">Pricing</a>
+            <a href="safety_information.html">Safety</a>
+            <a href="location.html">Locations & Contact</a>
+            <a href="enquiry.html">Enquiry</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-title">
+            <h1>Pricing</h1>
+            <p>Clear prices. No hidden costs.</p>
+        </section>
+
+        <!-- price table, prices are just example prices for now -->
+        <section>
+            <h2>Scooter Hire Prices</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Scooter</th>
+                            <th>30 minutes</th>
+                            <th>1 hour</th>
+                            <th>Full day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Campus Lite</td>
+                            <td>R25</td>
+                            <td>R40</td>
+                            <td>R120</td>
+                        </tr>
+                        <tr>
+                            <td>City Cruiser</td>
+                            <td>R30</td>
+                            <td>R50</td>
+                            <td>R150</td>
+                        </tr>
+                        <tr>
+                            <td>Power Rider</td>
+                            <td>R40</td>
+                            <td>R65</td>
+                            <td>R190</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="narrow">
+            <h2>Good to Know</h2>
+            <ul>
+                <li>The price you see is the price you pay.</li>
+                <li>You can pick up and drop off at any of our three stations.</li>
+                <li>Riders must be 18 or older.</li>
+            </ul>
+            <a href="enquiry.html" class="button">Enquire Now</a>
+        </section>
+    </main>
+
+    <!-- ===== footer ===== -->
+    <footer>
+        <h3>EcoRide SA</h3>
+        <p>Affordable. Convenient. Eco-Friendly.</p>
+        <p>Randburg, Gauteng</p>
+        <p>&copy; 2026 EcoRide SA</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
